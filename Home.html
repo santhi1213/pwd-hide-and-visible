@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>PWD</title>
+</head>
+<body>
+	<div class="input-box">
+		<input type="password" placeholder="Enter Your Secret" id="password">
+		<img src="eye-close.jpeg" id="eyeIcon"  />
+	</div>
+
+<script type="text/javascript">
+	
+	let password = document.getElementById('password');
+	let eyeIcon  = document.getElementById('eyeIcon');
+
+	eyeIcon.onclick = function(){
+		if (password.type == 'password') {
+			password.type = 'text';
+			eyeIcon.src = 'eye-open.jpeg'
+		}
+		else{
+			password.type = 'password';
+			eyeIcon.src = 'eye-close.jpeg';
+		}
+	}
+
+</script>
+
+</body>
+</html>
